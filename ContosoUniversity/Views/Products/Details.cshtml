@@ -1,0 +1,20 @@
+﻿@model Product
+@{
+    ViewBag.Title = "Product Details";
+}
+<h1>Product Details</h1>
+<table class="table table-bordered table-striped">
+    <tr>
+        <td>Id</td>
+        <td>@Model.Productid</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td>@Model.Price</td>
+    </tr>
+</table>
+<a asp-controller="Home" asp-action="Index" class="btn btn-primary"></a>
